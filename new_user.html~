@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<head>
+	<title>Backpack - Check Your Email</title>
+	<link rel="stylesheet" href="basic_school_style.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head> 
+
+<html>
+<body>
+
+<div id="new_user">
+	<div id="new_user_paper">
+		<a href="index.html"><img id="new_user_logo" src="img/backpack.png" alt="logo" /></a>
+
+		<p style="font-weight: bold;">Check your email!</p>
+		<p>We've sent you a confirmation email to create your account so that you can start receiving class announcements right away!</p>
+		<p style="font-size: 20px;">- The Backpack App Team</p>
+	</div>
+</div>
+
+</body>
+</html>

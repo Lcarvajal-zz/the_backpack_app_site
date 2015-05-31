@@ -1,0 +1,150 @@
+<!DOCTYPE>
+<head>
+	<title>Backpack - Home</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head> 
+	<script SRC="js/form_check.js">
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+
+<a href="" >
+<img id="logo" src="img/backpack_logo.png" alt="logo" />
+</a>
+
+<form id="returning_user" action="" method="post" enctype="text/plain"
+	onsubmit="return validateUser()">
+	<input class="tb" id="username" type="text" name="username" 
+		autocomplete="on" value="email" 
+		onclick="this.select();" maxlength="254" >
+	<input class="tb" id="password" type="password" name="password" 
+		autocomplete="on" value="password" 
+		onclick="this.select();" maxlength="15" >
+	<input id="login_button" type="button" onclick="" value="Login" />
+
+</form>
+
+</header>
+
+<div id="slides">
+
+<div class="slide" id="s1">
+
+	<div id="s1_cover">
+	</div>
+
+	<div id="s1_content">
+		<h2>&ldquo;Connecting teachers with parents first through fifth grade.&rdquo;</h2>
+	</div>
+
+	<div id="download">
+		<image src="img/AppStoreButton.png" alt="ios download" />
+		<image src="img/PlayStoreButton.png" alt="android download" style="margin-left: 20px;" />
+	</div>
+
+</div>
+
+<div class="slide" id="s2">
+
+	<img src="img/sj.png" alt="mini steve jobs" />
+
+	<div id="s2_content">
+		<p style="font-style:italic; font-weight:bold; text-align: center;">&ldquo;Unlock your child's potential.&rdquo;</p>
+		<p>&#09;The Backpack App allows teachers to flag students who are having difficulties in a particular subject area, empowering parents to take quick action on improving their child's education.</p>
+	</div>
+
+</div>
+
+<div class="slide" id="s3">
+	<img src="img/student_iphone_app.png" alt="student's iphone"/>
+
+	<div id="s3_content">
+	<p style="font-style:italic; font-weight:bold; text-align: center;">&ldquo;Be Proactive&rdquo;</p>
+	<p>Teachers can announce important exams and assignments to ensure kids are on track to performing well in school.</p>
+		<p>Schools have the option of sending important notifications, making sure you are up-to-date with information like preparing for the FCAT.</p>
+	</div>
+
+</div>
+
+<div class="slide" id="s4">
+	<img src="img/teacher_iphone_app.png" alt="teacher's iphone" />
+
+	<div id="s4_content">
+		<p style="font-style:italic; font-weight:bold; text-align: center;">&ldquo;The Backpack App is teacher friendly.&rdquo;</p>
+		<p>Getting through to a classroom of parents is difficult, so backpack makes it easy for teachers to communicate effectively with those who need special attention.</p>
+	</div>
+</div>
+
+<div class="slide" id="s5">
+
+	
+
+<form name="new_user" id="new_user" action="new_user.html" method="post" 
+	enctype="text/plain" onsubmit="return validateNewUser()">
+
+	<div id="form_cover">
+	</div>
+
+	<span id="h_sign">Sign Up</span><br>
+	<div id="sh_sign">It's free!</div><br>
+
+	<input class="tb" id="firstname" type="text" name="firstname" 
+		autocomplete="on" value="First name" 
+		onclick="this.select();" maxlength="25" >
+	<input class="tb" id="lastname" 
+		type="text" name="lastname" 
+		autocomplete="on" value="Last name" 
+		onclick="this.select();" maxlength="35" >
+	<br> 
+	<input class="tb tb2" id="new_email" 
+		type="text" name="new_email" 
+		autocomplete="on" value="Your email" 
+		onclick="this.select();" maxlength="254" >
+	<br> 
+	<input class="tb tb2" id="re_email" 
+		type="text" name="re_email" 
+		autocomplete="on" value="Re-enter email" 
+		onclick="this.select();" maxlength="254" >
+	<br> 
+	<input class="tb tb2" id="new_password" type="text" name="password" 
+		autocomplete="off" value="New password" 
+		onclick="this.select();" maxlength="15" >
+	<br>
+	<input id="sign_up" type="submit"  value="Sign Up" />
+
+	<span id="new_user_error"></span>
+
+</form>
+	
+	<div id="center_links">
+	<div id="links">
+		<ul>
+			<li>
+			<a href="school_pricing.html">schools</a>
+			</li>
+			<li>
+			<a href="">careers</a>
+			</li>
+			<li>
+			<a href="">about us</a>
+			</li>
+			<li>
+			<a href="">contact us</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+</div>
+
+</body>
+</html>

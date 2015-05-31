@@ -1,0 +1,106 @@
+html {
+	background: url(img/new_user.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF9900;
+}
+
+a:active {
+	text-decoration: none;
+	color: #FF9900;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #5200A3;
+	z-index: 2;
+	height: 30px;
+	left:0px;
+	right:0px;
+	padding: 10px;
+	display: block;
+	box-shadow: 0px 5px 5px #000000;
+}
+
+#logo {
+	position: absolute;
+	left: 60px;
+	top: 8px;
+	height: 35px;
+}
+
+/* User confirmation specific styling */
+#new_user {
+	position: relative;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#new_user_paper {
+	background-color: #FFFFFF;
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+	height: 415px;
+	width: 600px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	box-shadow: 0px 0px 25px #000000;
+}
+
+#new_user_logo {
+	height: 80px;
+}
+
+/* login page */
+#new_user .tb {
+	height: 40px;
+	font-size: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #EFD9FF;
+	border: solid;
+	border-radius: 4px;
+	border-width: 1px;
+	border-color: #5200A3;
+	color: #000000;
+}
+
+#login_button {
+	width: 140px;
+	height: 40px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: #FF9900;
+	border-style: none;
+	border-color: #FF9900;
+	border-width: 1px;
+	border-radius: 4px;
+}

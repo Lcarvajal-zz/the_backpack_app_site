@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<head>
+	<title>Backpack - About Us</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head> 
+	<script SRC="js/form_check.js">
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+
+<a href="signup.php" >
+<img id="logo" src="img/backpack_logo.png" alt="logo" />
+</a>
+
+<form id="returning_user" action="index.php" method="post" enctype="text/plain"
+	onsubmit="return validateUser()">
+	<input id="login_button" type="submit" value="Login" />
+
+</form>
+
+</header>
+
+<div class="info_slides" style="height:150%;">
+	<div id="about_content">
+		<h1>Our Vision</h1>
+		<p>Our philosophy is that a good student will go on to become a great person. We therefore aim to provide a communication service that will help all elementary schools shape more good students so that the world can have more great people.</p>
+		<h1>Our Mission</h1>
+		<p>We strive to create the best communication system for primary schools, by ensuring every student's guardian can access notifications on any mobile device.</p>
+		<p>We strive to build a system that serves in the teacher's best interest; always giving teachers control over work entering into their personal lives.</p>
+
+		<h1>Our Team</h1>
+
+		<table>
+			<tr>
+				<td style="width:145px;">
+					<img src="img/lukas.jpg" alt="Lukas" />
+				</td>
+				<td>
+					<h3>Founder/CEO
+					<span style="color:#5200A3;">
+						- Lukas Carvajal
+					</span>
+					</h3>
+					<p>I have always admired the tremendous impact teachers have on shaping young students' lives. So I decided to set out and use the programming skills I know to build the best method of communication for parents and teachers of young students. </p>
+					<p>Some of my favorite things to do are to play soccer, play the piano, do triathlons, and code. I especially love building things!</p>
+					
+					<p><a style="color:black;" href="http://lcarvajal.github.io">Check out my Personal Page</a></p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="center_links">
+	<div id="links">
+		<ul>
+			<li>
+			<a href="school_pricing.html">schools</a>
+			</li>
+			<li>
+			<a href="careers.html">careers</a>
+			</li>
+			<li>
+			<a href="about.html">about us</a>
+			</li>
+			<li>
+			<a href="contact.html">contact us</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+
+</div>
+
+</body>
+</html>

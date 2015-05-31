@@ -1,0 +1,443 @@
+html {
+	background: url(img/learning.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 32px;
+	padding: 0px;
+}
+
+h2 {
+	font-size: 50px;
+	text-align: left;
+	padding: none;
+	font-weight: bold;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #5200A3;
+	z-index: 2;
+	height: 30px;
+	left:0px;
+	right:0px;
+	padding: 10px;
+	display: block;
+}
+
+#header_links {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	width: 500px;
+	text-align: center;
+	background-color: #5200A3;
+	border-bottom-right-radius: 15px;
+	padding: 5px;
+}
+#header_links ul {
+	padding: 0px;
+	margin: 0px;
+}
+#header_links li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#logo {
+	position: absolute;
+	margin-left: 15px;
+	top: 8px;
+	height: 35px;
+}
+
+#expand_nav {
+	height: 30px;
+}
+
+#returning_user .tb {
+	width: 150px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	border: solid;
+	border-radius: 4px;
+	border-width: 1px;
+	border-color: #5200A3;
+	color: #000000;
+}
+
+#returning_user {
+	text-align: right;
+	margin-right: 30px;
+}
+
+#login_button {
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #5C005C;
+	border-style: none;
+	border-color: #5C005C;
+	border-width: 1px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+a:link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF9900;
+}
+
+a:active {
+	text-decoration: none;
+	color: #FF9900;
+}
+
+
+#slides {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width: 100%;
+}
+
+.slide {
+	position: relative;
+	width: 100%;
+	min-width:1200px;
+	height: 101%;
+	min-height: 650px;
+	
+}
+
+#s1 {
+	height: 110%;
+}
+#s1_cover {
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 105%;
+	background-color: #5200A3;
+	z-index: -1;
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#s1_content {
+	color: white;
+	width: 60%;
+	position: relative;
+	top: 25%;
+	left: 10%;
+}
+
+#download {
+	position: absolute;
+	bottom: 20%;
+	right: 5%;
+	height: 8%;
+	width: 40%;
+	text-align: right;
+
+}
+
+#s1 img {
+	height: 100%;
+}
+
+#s2 {
+	background-color: white;
+	height: 101%;
+}
+#s2 img {
+	height: 80%;
+	position: absolute;
+	bottom: 0%;
+	left: 2%;
+}
+
+
+#s2_content {
+	width: 50%;
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	text-align: center;
+}
+
+#s3 {
+	background-color: #5200A3;
+	height: 95%;
+}
+#s3 img {
+	position: absolute;
+	right: 10%;
+	top:5%;
+	height: 90%;
+	min-width: 200px;
+}
+
+#s3_content {
+	width: 50%;
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	text-align: center;
+}
+
+#s4 {
+	background-color: white;
+	height: 95%;
+}
+#s4 img {
+	position: absolute;
+	left: 10%;
+	top:5%;
+	height: 90%;
+	min-width: 200px;	
+}
+
+#s4_content {
+	color: black;
+	width: 55%;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	text-align: center;
+}
+
+#s5 {
+	height: 95%;
+}
+
+#more_info {
+	position: absolute;
+	top: 15%;
+	width: 80%;
+	left: 5%;
+	height: 50%;
+}
+#more_info ul{
+	padding: 0px;
+	margin: 0px;
+}
+#more_info li {
+	list-style-type: none;
+	padding-bottom: 30px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#h_sign {
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#sh_sign {
+	color: 	#FFFFFF;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#form_cover {
+	z-index: -2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #5200A3;
+
+	border-radius: 15px;
+}
+
+#new_user {
+	position: absolute;
+	left: 4%;
+	top: 12%;
+	padding: 20px;
+}
+
+#new_user .tb {
+	height: 40px;
+	font-size: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #EFD9FF;
+	border: solid;
+	border-radius: 4px;
+	border-width: 1px;
+	border-color: #5200A3;
+	color: #000000;
+}
+
+#new_user .tb2 {
+	width: 414px;
+}
+
+#firstname, #lastname {
+	width: 200px;
+	margin-right: 10px;
+}
+
+#sign_up {
+	width: 140px;
+	height: 40px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: #FF9900;
+	border-style: none;
+	border-color: #FF9900;
+	border-width: 1px;
+	border-radius: 4px;
+}
+
+#new_user_error {
+	position: relative;
+	left: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+#clearly {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	color: #5C005C;
+}
+
+#center_links {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+#links {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #5200A3;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 5px;
+}
+#links ul {
+	padding: 0px;
+	margin: 0px;
+}
+#links li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* career Content */
+.info_slides {
+	position: absolute;
+	height:100%;
+	width:100%;
+	min-width: 800px;
+	top:0px;
+	left:0px;
+	background-color:white;"
+	color: #000000;
+}
+
+#career_content {
+	position: absolute;
+	top: 20%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+/* about Content */
+#about_content {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	text-align: center;
+}
+
+#about_content table {
+	width: 100%;
+	height: 300px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+#about_content img {
+	height: 300px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	border: solid;
+	border-width: 2px;
+}
+
+#about_content h3 {
+	font-size: 25px;
+}
+
+#about_content p {
+	font-size: 18px;
+}
+
+/* home styling */
+#s1_home {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	background-color: #5200A3;
+	color: white;
+	width: 400px;
+	text-align: left;
+	padding: 15px;
+	border-radius: 20px;
+	border-bottom-left-radius: 0px;
+
+
+}
+
+#s1_home p {
+	font-size: 25px;
+	font-weight: bold;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<head>
+	<title>Backpack - Careers</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head> 
+	<script SRC="js/form_check.js">
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+
+<a href="signup.php" >
+<img id="logo" src="img/backpack_logo.png" alt="logo" />
+</a>
+
+<form id="returning_user" action="index.php" method="post" enctype="text/plain"
+	onsubmit="return validateUser()">
+	<input id="login_button" type="submit" value="Login" />
+
+</form>
+
+</header>
+
+<div style="position: absolute;height:100%;width:100%;top:0px;left:0px;background-color:white;">
+	<div id="career_content" style="color:black;">
+		<a href="index.html"><img id="new_user_logo" src="img/backpack.png" alt="logo" /></a>
+		<br><h1>Interested in joining our team?</h1><br>
+		Email us at Lukas@thebackpackapp.com to let us know what you can contribute!
+	</div>
+
+	<div id="center_links">
+	<div id="links">
+		<ul>
+			<li>
+			<a href="school_pricing.html">schools</a>
+			</li>
+			<li>
+			<a href="careers.html">careers</a>
+			</li>
+			<li>
+			<a href="about.html">about us</a>
+			</li>
+			<li>
+			<a href="contact.html">contact us</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+
+</div>
+
+</body>
+</html>

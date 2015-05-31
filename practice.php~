@@ -1,0 +1,210 @@
+<?php // accesscontrol.php
+	include_once 'common.php';
+	include_once 'db.php';
+
+	session_start();
+
+	error_reporting( error_reporting() & ~E_NOTICE );
+	$uid = isset($_POST['uid']) ? $_POST['uid'] : $_SESSION['uid'];
+	$pwd = isset($_POST['pwd']) ? $_POST['pwd'] : $_SESSION['pwd'];
+
+	// user is not logged in or has not signed up 
+	if(!isset($uid) and !isset($_POST['submitok'])) {
+?>
+
+<!DOCTYPE>
+<head>
+	<title>Backpack - Home</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head> 
+	<script SRC="js/form_check.js">
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+
+<a href="" >
+<img id="logo" src="img/backpack_logo.png" alt="logo" />
+</a>
+
+	<form id="returning_user" 
+	action="<?=$_SERVER['PHP_SELF']?>" method="post">
+		<input class="tb" id="username" type="text" name="uid" 
+		autocomplete="on" value="email" 
+		onclick="this.select();" maxlength="254" >
+		<input class="tb" id="password" type="password" name="pwd" 
+		autocomplete="on" value="password" 
+		onclick="this.select();" maxlength="15" >
+		<input id="login_button" type="submit" value="Login" />
+	</form>
+
+</header>
+
+<div id="slides">
+
+<div class="slide" id="s1">
+
+	<div id="s1_cover">
+	</div>
+
+	<div id="s1_content">
+		<h2>&ldquo;Connecting teachers with parents first through fifth grade.&rdquo;</h2>
+	</div>
+
+	<div id="download">
+		<image src="img/AppStoreButton.png" alt="ios download" />
+		<image src="img/PlayStoreButton.png" alt="android download" style="margin-left: 20px;" />
+	</div>
+
+</div>
+
+<div class="slide" id="s2">
+
+	<img src="img/sj.png" alt="mini steve jobs" />
+
+	<div id="s2_content">
+		<p style="font-style:italic; font-weight:bold; text-align: center;">&ldquo;Unlock your child's potential.&rdquo;</p>
+		<p>&#09;The Backpack App allows teachers to flag students who are having difficulties in a particular subject area, empowering parents to take quick action on improving their child's education.</p>
+	</div>
+
+</div>
+
+<div class="slide" id="s3">
+	<img src="img/student_iphone_app.png" alt="student's iphone"/>
+
+	<div id="s3_content">
+	<p style="font-style:italic; font-weight:bold; text-align: center;">&ldquo;Be Proactive&rdquo;</p>
+	<p>Teachers can announce important exams and assignments to ensure kids are on track to performing well in school.</p>
+		<p>Schools have the option of sending important notifications, making sure you are up-to-date with information like preparing for the FCAT.</p>
+	</div>
+
+</div>
+
+<div class="slide" id="s4">
+	<img src="img/teacher_iphone_app.png" alt="teacher's iphone" />
+
+	<div id="s4_content">
+		<p style="font-style:italic; font-weight:bold; text-align: center;">&ldquo;The Backpack App is teacher friendly.&rdquo;</p>
+		<p>Getting through to a classroom of parents is difficult, so backpack makes it easy for teachers to communicate effectively with those who need special attention.</p>
+	</div>
+</div>
+
+<div class="slide" id="s5">
+
+	
+
+<form name="new_user" id="new_user" method="post" action="<?=$_SERVER['PHP_SELF']?>">
+
+	<div id="form_cover">
+	</div>
+
+	<span id="h_sign">Sign Up</span><br>
+	<div id="sh_sign">It's free!</div><br>
+
+	<input class="tb" id="firstname" type="text" name="firstname" 
+		autocomplete="on" value="First name" 
+		onclick="this.select();" maxlength="25" >
+	<input class="tb" id="lastname" 
+		type="text" name="lastname" 
+		autocomplete="on" value="Last name" 
+		onclick="this.select();" maxlength="35" >
+	<br> 
+	<input class="tb tb2" id="new_email" 
+		type="text" name="new_email" 
+		autocomplete="on" value="Your email" 
+		onclick="this.select();" maxlength="254" >
+	<br> 
+	<input class="tb tb2" id="re_email" 
+		type="text" name="re_email" 
+		autocomplete="on" value="Re-enter email" 
+		onclick="this.select();" maxlength="254" >
+	<br> 
+	<input class="tb tb2" id="new_password" type="text" name="new_password" 
+		autocomplete="off" value="New password" 
+		onclick="this.select();" maxlength="15" >
+	<br>
+	<input id="sign_up" name="submitok" type="submit"  value="Sign Up" />
+
+	<span id="new_user_error"></span>
+
+</form>
+	
+	<div id="center_links">
+	<div id="links">
+		<ul>
+			<li>
+			<a href="school_pricing.html">schools</a>
+			</li>
+			<li>
+			<a href="">careers</a>
+			</li>
+			<li>
+			<a href="">about us</a>
+			</li>
+			<li>
+			<a href="">contact us</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+<?php
+	exit;
+}
+
+	$_SESSION['uid'] = $uid;
+	$_SESSION['pwd'] = $pwd;
+
+	dbConnect("The_Backpack_App");
+	$sql = "SELECT * FROM users WHERE
+	email = '$uid' AND password = '$pwd'";
+	$result = mysql_query($sql);
+	if (!$result) {
+		error('A database error occurred while checking your '.
+		'login details.\nIfhis error persists, please '.
+		'contact lukascarvajal@gmail.com.');
+	}
+
+	if (mysql_num_rows($result) == 0) {
+		unset($_SESSION['uid']);
+		unset($_SESSION['pwd']);
+?>
+
+ <!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Access Denied </title>
+    <meta http-equiv="Content-Type"
+      content="text/html; charset=iso-8859-1" />
+  </head>
+  <body>
+  <h1> Access Denied </h1>
+  <p>Your user ID or password is incorrect, or you are not a
+     registered user on this site. To try logging in again, click
+     <a href="<?=$_SERVER['PHP_SELF']?>">here</a>. To register for instant
+     access, click <a href="signup.php">here</a>.</p>
+  </body>
+  </html>
+
+<?php
+	exit;
+}
+
+$username = mysql_result($result,0,'email');
+session_destroy();
+?>

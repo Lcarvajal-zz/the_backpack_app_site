@@ -1,0 +1,129 @@
+<!DOCTYPE>
+<head>
+	<title>Backpack - Schools</title>
+	<link rel="stylesheet" href="school_style.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head> 
+
+<html>
+<body>
+
+<header>
+
+<a href="index.php" >
+<img id="logo" src="img/backpack_logo.png" alt="logo" />
+</a>
+
+<div id="for_schools">
+	for schools
+</div>
+
+<form id="returning_user" action="index.php" method="post" enctype="text/plain">
+	<input id="login_button" type="submit" onclick="submit" value="Login" />
+
+</form>
+
+</header>
+
+<div id="slides">
+
+<div class="slide" id="s1">
+	<div id="s1_content">
+
+		<h1>Don't let important messages get lost on their way back from school.<h1>
+
+	</div>
+</div>
+
+<div class="slide" id="s2">
+
+	<img src="img/push_iphone.png" alt="push notifications" />
+
+	<div id="s2_content">
+	<h1>Reach the parents who need to know, with push notifications.<h1>
+	</div>
+
+	<div id="s2_explain">
+		<p>Flyers get lost and emails get ignored. Nothing gets through to parents better than immediate notifications on their  mobile phones.
+	</div>
+
+</div>
+
+<div class="slide" id="s3" style="height:50px;">
+
+</div>
+
+<div class="slide" id="s4">
+	<div id="price_plan">
+
+	<div id="desc_price">
+	The Backpack App is and always will be free for parents and teachers to use!<br> Start sending school wide messages for as low as 15 cents per student!
+	</div>	
+
+	<table>
+	<tr style="font-weight: bold; 
+		background-color: #5200A3; color:white;">
+		<td>Service</td>
+		<td>Price per Student</td>
+		<td>Notification Type</td>
+		<td>Monthly Limit</td>
+		<td>Monthly Max Price</td>
+	</tr>
+	<tr>
+		<td>The Backpack App</td>
+		<td>FREE</td>
+		<td>none</td>
+		<td>na</td>
+		<td>na</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold">Standard</td>
+		<td>$0.15</td>
+		<td>School wide messages</td>
+		<td>2</td>
+		<td>$89.99</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold">Directed</td>
+		<td>$0.39</td>
+		<td>School wide and grade specific messages</td>
+		<td>5</td>
+		<td>$249.99</td>	
+	</tr>
+	<tr>
+		<td style="font-weight:bold">Directed+</td>
+		<td>$0.59</td>
+		<td>School wide and grade specific messages</td>
+		<td>10</td>
+		<td>$349.99</td>	
+	</tr>
+	</table>
+	</div>
+</div>
+
+<div class="slide" id="s5">
+	<div id="center_links">
+	<div id="links">
+		<ul>
+			<li>
+			<a href="school_pricing.html">schools</a>
+			</li>
+			<li>
+			<a href="careers.html">careers</a>
+			</li>
+			<li>
+			<a href="about.html">about us</a>
+			</li>
+			<li>
+			<a href="contact.html">contact us</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+</div> <!-- end of slides -->
+</body>
+</html>

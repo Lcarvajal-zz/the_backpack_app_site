@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<head>
+	<title>Backpack - About Us</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head> 
+	<script SRC="js/form_check.js">
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+
+<a href="signup.php" >
+<img id="logo" src="img/backpack_logo.png" alt="logo" />
+</a>
+
+<form id="returning_user" action="index.php" method="post" enctype="text/plain"
+	onsubmit="return validateUser()">
+	<input id="login_button" type="submit" value="Login" />
+
+</form>
+
+</header>
+
+<div class="info_slides" style="height:150%;">
+	<div id="about_content">
+		<h1>Contact Us</h1>
+		<p>Email: Lukas@thebackpackapp.com</p>
+		<p>Telephone: (305) 689 - 2244</p>
+		
+
+		<h1>Our Team</h1>
+
+		<table>
+			<tr>
+				<td style="width:145px;">
+					<img src="img/lukas.jpg" alt="Lukas" />
+				</td>
+				<td>
+					<h3>Founder/CEO
+					<span style="color:#5200A3;">
+						- Lukas Carvajal
+					</span>
+					</h3>
+					<p>I have always admired the tremendous impact teachers have on shaping young students' lives. So I decided to set out and use the programming skills I know to build the best method of communication for parents and teachers of young students. </p>
+					<p>Some of my favorite things to do are to play soccer, play the piano, do triathlons, and code. I especially love building things!</p>
+					
+					<p><a style="color:black;" href="http://lcarvajal.github.io">Check out my Personal Page</a></p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="center_links">
+	<div id="links">
+		<ul>
+			<li>
+			<a href="school_signup.php">schools</a>
+			</li>
+			<li>
+			<a href="careers.html">careers</a>
+			</li>
+			<li>
+			<a href="about.html">about us</a>
+			</li>
+			<li>
+			<a href="contact.php">contact us</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+alert("hi");
+
+
+document.getElementById( 's2' ).style.backgroundColor = 'green';
+
+alert("hi");
+
+var t = $('#slides').offset().top();
+
+$(document).scroll(function(){
+    if($(this).scrollTop() > t)
+    {   
+        $('#s2').css({"background-color":"green"});
+    } 
+});
+
